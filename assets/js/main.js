@@ -17,7 +17,14 @@ if (navClose) {
     })
 }
 
+/*============== AUTOCLOSE MENU MOBILE ==============*/
+const navLink = document.querySelectorAll('.nav__link')
 
+const linkAutoClose = () => {
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(el => el.addEventListener('click', linkAutoClose))
 
 /*=============== ADD BLUR HEADER ===============*/
 
