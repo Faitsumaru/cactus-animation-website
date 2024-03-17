@@ -105,6 +105,10 @@ img {
 
 .section {
   padding-block: 5rem 1rem;
+
+  &__title {
+    text-transform: uppercase;
+  }
 }
 
 .section__title {
@@ -311,7 +315,57 @@ img {
 }
 
 /*=============== NEWS ===============*/
+.new {
+  &__data {
+    text-align: center;
+  }
 
+  &__container {
+    row-gap: 7.5rem;
+  }
+
+  &__content {
+    row-gap: 6rem;
+  }
+
+  &__card {
+    position: relative;
+    width: 200px;
+    background: var(--gradient-card);
+    padding: 9rem .75rem 1.5rem .75rem;
+    border: 2px solid var(--first-color-light);
+    border-radius: 1.5rem;
+
+    &:nth-child(odd) {
+      transform: rotate(-5deg);
+    }
+
+    &:nth-child(even) {
+      justify-self: flex-end;
+      transform: rotate(5deg);
+    }
+
+    &:hover .new__img {
+      transform: translateY(-.5rem);
+      filter: drop-shadow(var(--shadow-img));
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: 0 auto;
+    transition: transform .4s, filter 1s ease-out;
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+}
 
 /*=============== SHOP ===============*/
 
