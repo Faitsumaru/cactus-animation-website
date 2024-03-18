@@ -340,6 +340,58 @@ img {
 }
 
 /*=============== SHOP ===============*/
+.shop__container {
+  padding-top: 6.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem 1.5rem;
+}
+.shop__card {
+  position: relative;
+  background: var(--gradient-card);
+  padding: 5.75rem 0.75rem 1.25rem 0.75rem;
+  border-radius: 1rem;
+  transition: transform 0.8s, box-shadow 1.5s ease-out;
+}
+.shop__card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: inset 0px -5px 10px var(--first-color-alt);
+}
+.shop__card:hover .shop__img {
+  transform: translateY(-0.5rem);
+  filter: drop-shadow(var(--shadow-img));
+}
+.shop__img {
+  position: absolute;
+  top: -4.5rem;
+  left: 0;
+  right: 0;
+  width: 130px;
+  margin: 0 auto;
+  transition: transform 0.4s, filter 1s ease-out;
+}
+.shop__title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.5rem;
+}
+.shop__price {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+.shop__btn {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  outline: none;
+  border: none;
+  background-color: var(--white-color);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: grid;
+  cursor: pointer;
+}
+
 /*=============== CARE ===============*/
 /*=============== CONTACT ===============*/
 /*=============== FOOTER ===============*/
