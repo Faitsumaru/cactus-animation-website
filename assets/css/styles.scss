@@ -380,6 +380,10 @@ img {
 
 /*=============== SHOP ===============*/
 .shop {
+  background-color: var(--gray-color);
+  box-shadow: inset 0px 50px 30px var(--body-color),
+  0 40px 30px var(--gray-color);
+
   &__container {
     padding-top: 6.5rem;
     grid-template-columns: repeat(2, 1fr);
