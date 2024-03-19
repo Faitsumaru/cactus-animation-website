@@ -230,6 +230,10 @@ img {
 }
 
 /* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
 /*=============== HOME ===============*/
 .home__container {
   padding-top: 2.5rem;

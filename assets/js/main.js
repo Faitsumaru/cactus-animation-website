@@ -47,8 +47,27 @@ const scrollUp = () => {
 window.addEventListener('scroll', scrollUp)
 
 
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+
+const scrollActive = () => {
+    const scrollDown = window.scrollY
+
+    sections.forEach(cur => {
+        const secHeight = cur.offsetHeight,
+              secTop = cur.offsetTop - 58,
+              secId = cur.getAttribute('id'),
+              secsClass = document.querySelector(`
+                .nav__menu a[href*='${secId}']
+              `)
+        
+        if (scrollDown > secTop && scrollDown <= secTop + secHeight)
+            secsClass.classList.add('active-link')
+        else
+            secsClass.classList.remove('active-link')
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
