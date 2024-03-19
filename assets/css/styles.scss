@@ -516,6 +516,94 @@ img {
 
 
 /*=============== FOOTER ===============*/
+.footer {
+  padding-block: 4rem 2rem;
+  background-color: var(--gray-color);
+  box-shadow: inset 0px 50px 30px var(--body-color);
+  
+  &__container {
+    row-gap: 3rem;
+    padding: 1rem;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1.15rem;
+    margin-left: 1.5rem;
+
+    i {
+      color: var(--first-color);
+      font-size: 1.5rem;
+      font-weight: initial;
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  &__content {
+    grid-template-columns: repeat(2, max-content);
+    gap: 4rem;
+    margin: 0 auto;
+    text-align: center;
+
+    & > div:last-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  &__title {
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    display: grid;
+    row-gap: .5rem;
+  }
+
+  &__link {
+    color: var(--text-color);
+    transition: color .5s;
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+
+    &-link {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      transition: color .5s
+    }
+  }
+
+  &__link:hover,
+  &__social-link:hover {
+    color: var(--first-color);
+  }
+
+  &__copy {
+    text-align: center;
+    display: block;
+    margin-top: 2.5rem;
+    font-size: var(--small-font-size);
+    opacity: .5;
+    filter: blur(.5px);
+    -webkit-filter: blur(.5px);
+  }
+
+}
 
 
 /*=============== SCROLL BAR ===============*/
