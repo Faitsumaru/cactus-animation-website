@@ -658,7 +658,42 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
 
+  .home {
+    &__title {
+      font-size: 2rem;
+    }
+    &__buttons {
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+  }
+
+  .shop {
+    &__container {
+      grid-template-columns: 160px;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &__content {
+      grid-template-columns: max-content;
+    }
+    &__container {
+      > div {
+        text-align: center;
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
 
 /* For medium devices */
 
