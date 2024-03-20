@@ -603,4 +603,63 @@ img {
   }
 }
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .home__container, .new__container, .care__container {
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
+
+  .shop__container {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+    grid-gap: 6rem 3rem;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(3, max-content);
+  }
+  .footer__content > div:last-child {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    width: 50%;
+  }
+
+  .new__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+  .new__card:nth-child(even) {
+    transform: translateY(10rem);
+  }
+
+  .shop__container {
+    grid-template-columns: repeat(3, 160px);
+  }
+
+  .care__container {
+    grid-template-columns: 600px;
+  }
+
+  .contact__container {
+    row-gap: 2rem;
+  }
+  .contact__content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+  .contact__content > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+}
 /* For large devices */

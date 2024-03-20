@@ -696,6 +696,86 @@ img {
 }
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .home, .new, .care {
+    &__container {
+      grid-template-columns: 400px;
+      justify-content: center;
+    }
+  }
 
+  .shop {
+    &__container {
+      grid-template-columns: repeat(2, 160px);
+      justify-content: center;
+      grid-gap: 6rem 3rem;
+    }
+  }
+
+  .footer {
+    &__content {
+      grid-template-columns: repeat(3, max-content);
+
+      > div:last-child {
+          grid-column-start: 3;
+          grid-column-end: 4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    &__menu {
+      width: 50%;
+    }
+  }
+
+  .new {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4rem;
+    }
+    &__card {
+      &:nth-child(even) {
+        transform: translateY(10rem);
+      }
+    }
+  }
+
+  .shop {
+    &__container {
+      grid-template-columns: repeat(3, 160px);
+    }
+  }
+
+  .care {
+    &__container {
+      grid-template-columns: 600px;
+    }
+  }
+
+  .contact {
+    &__container {
+      row-gap: 2rem;
+    }
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+      & > div:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: repeat(2, max-content);
+      justify-content: space-between;
+      margin: 0 1rem;
+    }
+  }
+}
 
 /* For large devices */
