@@ -16,7 +16,7 @@ Ornamental plants for your home as site w/ scrolling reveal animations effects!
   </a>
 
   <a href="https://faitsumaru.github.io/cactus-animation-website/">
-    <img src="assets/img/preshow/2-lg.jpg" alt="preshow care">
+    <img src="assets/img/preshow/2-lg.jpg" alt="preshow new">
   </a>
 
   <br>
